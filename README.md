@@ -1,2 +1,2 @@
 # Group-projects
-proyectos grupales
+todos los proyectos grupales PdS2
