@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html style="font-family:monospace;" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +7,32 @@
     <title>Mi información</title>
 </head>
 
-<body style="background-color: #f9a94d;">
+<body style="background-color: #12100E;">
 
-    <header>
+    <header style=" display: flex; align-items: center; justify-content: center; color: #D4DF9E ;background-color: #30321C; height:25vh;">
         <h1 style="text-align: center;" >Mi información</h1>
     </header>
 
-    <main>
-        <section style="background-color: #f37435; border-radius: 15px;" >
-            <div " >
+    <main style="  display: flex; flex-direction: column; color:#D4DF9E;">
+        <section style="background-color: #4A4B2F;" >
+            <div>
 
-                <form action="hola"  style="display: flex; padding: 100px 100px;">
+                <form action="nada"  style="display: flex; flex-direction: column ;padding: 50px 50px;">
                     
-                    <input type="text">
                     <label for="Nombre">Nombre</label>
-                    <input type="text" for="apellido"  >
-                    <label for="apellido">Apellido</label>
                     <input type="text">
+                    
+                    <label for="apellido">Apellido</label>
+                    <input type="text"  >
+                    
                     <label for="Cedula">Cedula</label>
-                    <input type="date" for="apellido"  >
+                    <input type="text">
+                    
+                    
                     <label for="Fecha de Nacimiento">Fecha de nacimiento</label>
+                    <input type="date">
+                    
+                    <label for="Lugar de nacimiento">Lugar de nacimiento</label>
                     <select name="Lugar de nacimiento" id="">
                     <Option selected>Panama</Option>
                     <Option>Panama Oeste</Option>
@@ -44,8 +50,10 @@
         </div>   
         </section>
 
-        <section>
-            <form action="">
+        <section style="background-color: #6B654B;  padding: 50px 50px;">
+            <form style="display: flex; flex-direction: column ;padding: 50px 50px;">
+
+                <h2>Seleccione su Facultad:</h2>
 
                 <input type="radio" name="1">
                 <label for="">Facultad en Ingenieria de Sistemas Computacionales</label>
@@ -61,7 +69,9 @@
                 <label for="">Facultad de Ciencias y Tecnologia</label>
             </form>
 
-            <form action="">
+            <form  style="display: flex; flex-direction: column ;padding: 50px 50px;">
+
+                <h2>Seleccione uno o más intereses.</h2>
                 <input type="checkbox">
                 <label for="">Programacion</label>
                 <input type="checkbox">
@@ -70,13 +80,22 @@
                 <label for="">Tecnologias para conectividad en la Red</label>
                 <input type="checkbox">
                 <label for="">Investigacion e Innovacion</label>
-
-                <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese su experiencia en programacion" resize=none;></textarea>
             </form>
+
+            <form style=" display: flex; align-items: center; justify-content: center;">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese su experiencia en programacion (si tiene)." resize=none;></textarea>
+            </form>
+
         </section>
         
-        <section>
-            <form action="">
+        <section style="background-color: #4A4B2F;">
+
+
+            
+
+            <form style="display: flex; flex-direction: column ;padding: 50px 50px;">
+
+                <h2>Información de salud.</h2>
 
                 <div>
 
@@ -85,32 +104,48 @@
                     <legend>Elija su altura.</legend>
                     <input type="range" max="200" min="0">
                 </div>
-                    
-                    <input type="checkbox">
+
+
+                <div>
+
                     <label for="">Rinitis</label>
                     <input type="checkbox">
+                    
                     <label for="">Asma</label>
                     <input type="checkbox">
-                <label for="">Lactosa</label>
+                        
+                    <label for="">Lactosa</label>
+                    <input type="checkbox">
+                </div>    
+                    
+                <div style="display: block;margin-left: auto; margin-right: auto;">
 
-                <textarea name="" id="" cols="30" rows="10" placeholder="Medicamentos, especificar" resize=none;></textarea>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Otro, especificar" resize=none;></textarea>
-                
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Especificar que medicamentos esta tomando." resize=none;></textarea>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Especificar otros." resize=none;></textarea>
+                </div>
+                    
                 
                 
             </form>
+            
+            <div style="display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;">
 
-            <a href='Subfolder/Agradecimiento.html' target="_blank"> 
-                <button class="" style="cursor: pointer;"> 
-                    Enviar 
-                </button> 
-            </a>
+                <a href='Subfolder/Agradecimiento.html' target="_blank"> 
+                    <button style="cursor: pointer;"> 
+                        Enviar 
+                    </button> 
+                </a>
+            </div>
+
         </section>
         
     </main>
 
     <footer>
-
+        <h3 style="color: #D4DF9E;">Página web por Eynar y Kenshin.</h3>
     </footer>
 
 
